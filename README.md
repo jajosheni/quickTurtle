@@ -54,4 +54,8 @@ so I needed to fully utilize it.
   2. breaks it into equal chunks,
   3. downloads them simultaneously,
   4. merges them together into the final file.  
+  
+  ISSUES:
+  1. Cannot resume chunks if interrupted.
+  2. Cannot see the progress.
 
