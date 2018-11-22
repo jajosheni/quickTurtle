@@ -1,7 +1,8 @@
 #!/bin/bash
 
-URL='http://85.25.211.218/downloads/War-Dogs-2016-720p-hdpopcorns.mp4?st=5Vwd2hxzCXG6ghVRnGtsQQ&e=1543070953'
+URL='INSERT_YOUR_URL_HERE'
 echo $(curl -sI $URL | grep -i Content-Length | awk '{print $2}')
+#input is prompted, write the numerical value on the screen and press enter.
 read TOTLENGTH
 THREADS=16
 AVGLENGTH=$TOTLENGTH/$THREADS
