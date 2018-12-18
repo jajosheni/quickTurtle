@@ -1,8 +1,9 @@
 #!/bin/bash
 
 URL='INSERT_YOUR_URL_HERE'
-echo $(curl -sI $URL | grep -i Content-Length | awk '{print $2}')
+echo $(curl -sI $URL | grep -i Content-Length: | awk '{print $2}')
 #input is prompted, write the numerical value on the screen and press enter.
+echo 'enter the number shown'
 read TOTLENGTH
 THREADS=16
 AVGLENGTH=$TOTLENGTH/$THREADS
