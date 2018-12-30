@@ -44,6 +44,15 @@
 #### Use at your own risk
 **=====================**
 
+#### 1.1 version:
+
+  1. Input bugfix.
+  2. Response & error handling.
+  3. Retry downloading missing part.
+  
+  ISSUES:
+  1. Starts chunk from the beginning if interrupted wasting downloaded data.
+  2. Cannot see the progress.
   
 #### 1.0 version:
 
